@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <br>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">Shipping Address</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-check mt-4"><input class="form-check-input" type="radio" name="nothing" id="flexRadioDefaultTest" /><label class="form-check-label" for="flexRadioDefaultTest">Default checked radio</label></div>
+              </div>
+              <div class="col-md-9">
+                <p class="mb-0">Name: John Doe</p>
+                <p class="mb-0">Phone: 01630132436</p>
+                <p class="mb-0">House #31, Nikunja #02, Khilkhet, Dhaka 1229</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="card">
+          <div class="card-header">Payment Options</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6 mb-2">
+                <div class="card card-body" style="background: rgb(245, 245, 245);">
+                  <div class="form-check"><input class="form-check-input" type="radio" name="payment_method" id="flexRadioDefault1" /><label class="form-check-label" for="flexRadioDefault1">Cash On Delivery</label></div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-2">
+                <div class="card card-body" style="background: rgb(245, 245, 245);">
+                  <div class="form-check"><input class="form-check-input" type="radio" name="payment_method" id="flexRadioDefault2" /><label class="form-check-label" for="flexRadioDefault2">NAGAD (Pay with Nagad)</label></div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-2">
+                <div class="card card-body" style="background: rgb(245, 245, 245);">
+                  <div class="form-check"><input class="form-check-input" type="radio" name="payment_method" id="flexRadioDefault3" /><label class="form-check-label" for="flexRadioDefault3">BKash (Pay with bKash)</label></div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-2">
+                <div class="card card-body" style="background: rgb(245, 245, 245);">
+                  <div class="form-check"><input class="form-check-input" type="radio" name="payment_method" id="flexRadioDefault4" /><label class="form-check-label" for="flexRadioDefault4">ROCKET (Pay with Rocket)</label></div>
+                </div>
+              </div>
+              <div class="col-md-12"><hr class="mt-2" /></div>
+              <div class="col-md-12" id="hpmPaymentDiv">
+                <div class="card card-body" style="background: rgb(245, 245, 245);">
+                  <div class="form-check"><input class="form-check-input" type="radio" name="payment_method" id="flexRadioDefault5" /><label class="form-check-label" for="flexRadioDefault5">
+                    <span
+                      data-hpm-id="_sslczHpmPayBtn"
+                      data-hpm-target="#hpmPaymentDiv"
+                      data-hpm-data='{"hello":"hello","world":"world"}'
+                      data-hpm-endpoint="http://localhost:8000/test/initiate-payment"
+                    >
+                      Pay with SSLCOMMERZ
+                    </span>
+                  </label></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer text-end"><button class="btn btn-warning">Confirm Order</button></div>
+        </div>
+        <br />
+      </div>
+    
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">Checkout Summary</div>
+          <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+          <div class="card-footer fw-bold">Payment Amount: 200 Tk.</div>
+        </div>
+      </div>
+    </div>    
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="hpm-embed.js"></script>
+</body>
+</html>
